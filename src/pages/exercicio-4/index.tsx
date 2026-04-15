@@ -10,7 +10,7 @@ export default function Ex04() {
             return;
         } 
     
-        if (!email.includes('@') || !email.includes('.com')) {
+        if (!email.includes('@') || !email.includes('.')) {
             alert('Email inválido');
             return;
         }
