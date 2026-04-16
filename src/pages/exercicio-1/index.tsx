@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {useState} from 'react';
 
 export default function Ex01() {
@@ -12,6 +13,7 @@ export default function Ex01() {
             <button onClick={() => setDark(!dark)}>
                 {dark ? 'Modo Claro' : 'Modo Escuro'}
             </button>
+            <Link href="/">Voltar</Link>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Link from 'next/link';
 
 export default function Ex04() {
     const [email, setEmail] = useState('');
@@ -44,6 +45,9 @@ export default function Ex04() {
             <button onClick={handleCadastro}>
             Cadastrar
             </button>
+
+            <Link href="/">Voltar</Link>
+            
         </div>
     );
 }

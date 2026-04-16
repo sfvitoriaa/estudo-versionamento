@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import Link from 'next/link';
 
 export default function Ex05() {
     const [users, setUsers] = useState<string[]>([]);
@@ -19,6 +20,7 @@ export default function Ex05() {
                     <li key={index}>{user}</li>
                 ))}
             </ul>
+            <Link href="/">Voltar</Link>
         </div>
     );
 }

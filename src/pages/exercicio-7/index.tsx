@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Ex07() {
   const [task, setTask] = useState("");
@@ -35,6 +36,7 @@ export default function Ex07() {
           <button onClick={() => removeTask(index)}>Remover</button>
         </div>
       ))}
+      <Link href="/">Voltar</Link>
     </div>
   );
 }

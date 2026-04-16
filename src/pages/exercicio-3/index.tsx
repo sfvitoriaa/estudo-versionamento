@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Ex03() {
 
@@ -30,12 +31,14 @@ export default function Ex03() {
             value= {senha}
             onChange= {(e) => setSenha(e.target.value)}
             />
+            
 
             <button onClick={handleLogin}>
             Entrar
-            </button>
+            </button>   
+            <Link href="/">Voltar</Link> 
         </div>
-    );
+    ); 
 }
 
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Ex02() {
@@ -27,6 +28,14 @@ export default function Ex02() {
                 <button onClick={aumentar}>Aumentar</button>
                 <button onClick={diminuir}>Diminuir</button>
             </div>
+
+            <h3> Histórico</h3>
+            <ul>
+                {history.map((value, index) => (
+                    <li key={index}> {value} </li>
+                ))}
+            </ul>
+            <Link href="/">Voltar</Link>
         </div>
     );
 }

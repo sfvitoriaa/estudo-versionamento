@@ -1,4 +1,5 @@
 import {use, useEffect, useState} from 'react';
+import Link from 'next/link';
 
 export default function Ex06() {
     const [users, setUsers] = useState<any[]>([]);
@@ -30,6 +31,7 @@ export default function Ex06() {
                     <p>{user.email}</p>
                 </div>
             ))}
+                <Link href="/">Voltar</Link>
         </div>
     );
 }
